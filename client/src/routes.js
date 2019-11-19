@@ -7,6 +7,7 @@ import Documentos from './pages/Documentos.vue';
 import Biblioteca from './pages/Biblioteca.vue';
 import EnviarConfirma from './pages/EnviarConfirma.vue';
 import PaginaDoProjeto from './pages/PaginaDoProjeto.vue';
+import Login from './pages/adm/Login.vue';
 
 export default [{
         path: '/',
@@ -60,5 +61,10 @@ export default [{
     {
         path: '/paginadoprojeto',
         component: PaginaDoProjeto
+    },
+    {
+        path: '/login',
+        name:"login",
+        component: Login
     }
 ];

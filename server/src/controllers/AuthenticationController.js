@@ -12,7 +12,7 @@ function jwtSignUser (user) {
 module.exports = {
   async register (req, res) {
     try {
-      console.log
+      
       const user = await User.create(req.body)
       const userJson = user.toJSON()
       res.send({
@@ -26,7 +26,9 @@ module.exports = {
     }
   },
   async login (req, res) {
+    
     try {
+      
       const {email, password} = req.body
       const user = await User.findOne({
         where: {
@@ -39,7 +41,7 @@ module.exports = {
           error: 'Email incorreto'
         })
       }
-
+      
       const senhaValida = await user.comparePassword(password)
       console.log(senhaValida)
       if (!senhaValida) {
@@ -55,9 +57,10 @@ module.exports = {
       })
       
     } catch (err) {
-        
+      
       res.status(500).send({
-        error: 'An error has occured trying to log in'
+        
+        error: 'mudou'
         
       })
     }

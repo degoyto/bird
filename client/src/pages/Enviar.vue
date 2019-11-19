@@ -93,12 +93,12 @@
             <img id="placeholder" :src=imgCarrega v-on:click="openUpload">
             <input 
                    
-                  ref="file" 
-                  type="file" 
-                  id="imgFile" 
-                    accept="image/*"
-                  class="escolhe-imagem"
-                  @change="onFileSelected">
+                ref="file" 
+                type="file" 
+                id="imgFile" 
+                accept="image/*"
+                class="escolhe-imagem"
+                @change="onFileSelected">
             
             
             

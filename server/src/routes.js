@@ -11,6 +11,9 @@ module.exports = (app) =>{
     AuthenticationController.register)
 
     app.post('/login',
+    AuthenticationController.login)
+
+    app.post('/lo',
     ProjetosController.login)
 
     app.get('/gnoticias',
