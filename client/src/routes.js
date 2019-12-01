@@ -1,3 +1,6 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+
 import Home from './pages/Home.vue';
 import Projeto from './pages/PageProjeto.vue';
 import Sobre from './pages/Sobre.vue';
@@ -8,8 +11,15 @@ import Biblioteca from './pages/Biblioteca.vue';
 import EnviarConfirma from './pages/EnviarConfirma.vue';
 import PaginaDoProjeto from './pages/PaginaDoProjeto.vue';
 import Login from './pages/adm/Login.vue';
+import AdmHome from './pages/adm/AdmHome.vue';
 
-export default [{
+
+Vue.use(Router)
+
+
+export default new Router({
+    routes: [
+    {
         path: '/',
         name:"home",
         component: Home
@@ -66,5 +76,13 @@ export default [{
         path: '/login',
         name:"login",
         component: Login
+    },
+    {
+        path: '/admin',
+        name:"admin",
+        component: AdmHome
     }
-];
+]
+}
+
+)
