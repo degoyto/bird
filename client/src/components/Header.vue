@@ -25,10 +25,11 @@
             </div>
 
             <div id="botoes_menores">
-                <button  id="upload">
-                    <p>UPLOAD</p>
-                </button >
-                
+                <form action="http://localhost:8080/enviar"> 
+                    <button  id="upload">
+                        <p>UPLOAD</p>
+                    </button >
+                </form>
                 <form action="http://localhost:8080/sobre"> 
                     <button  id="sobre">
                         <p>SOBRE</p>
